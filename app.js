@@ -32,7 +32,7 @@ app.use(
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-app.use('/api_xx', api_xx_Router);
+app.use('/api_xx', cors(), api_xx_Router);
 
 /* crown_xx */
 app.use('/crown_xx', crown_xx_Router);
