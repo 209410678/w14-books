@@ -11,6 +11,8 @@ const crown_xx_Router = require('./routes/crown_xx');
 const crown2_xx_Router = require('./routes/crown2_xx');
 const api_xx_Router = require('./routes/api_xx');
 const midproj_xx_Router = require('./routes/midproj_xx');
+const midterm_xx_Router = require('./routes/midterm_xx');
+const booksRouter = require('./routes/books_78');
 
 var app = express();
 
@@ -40,6 +42,12 @@ app.use('/crown2_xx', crown2_xx_Router);
 
 /* midproj_xx */
 app.use('/midproj_xx', midproj_xx_Router);
+
+/* midterm_xx */
+app.use('/midterm_xx', midterm_xx_Router);
+
+/* Books CRUD demo */
+app.use('/books_78', booksRouter);
 
 /* finalproj_xx */
 
